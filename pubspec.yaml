@@ -1,0 +1,56 @@
+name: mswhd_admin
+description: "This is mswhd admin application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  smooth_page_indicator: ^1.1.0
+  shared_preferences: ^2.2.3
+  file_picker: ^8.0.5
+  permission_handler: ^11.3.1
+  intl: ^0.19.0
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  firebase_database: ^11.0.1
+  firebase_storage: ^12.0.1
+  google_sign_in: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 23
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/images/icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/images/icon.png"
+  linux:
+    generate: true
+    image_path: "assets/images/icon.png"
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
